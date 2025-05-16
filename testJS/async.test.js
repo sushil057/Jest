@@ -24,45 +24,19 @@
 // });
 
 
-// async function fetchData(){
-//   const response = await fetch('http://localhost:3000/employees');
-//   const data = await response.json();
-//   console.log('The data to be fetched has been completed');
-// }
-// fetchData();
+const getData = require('./async')
 
-// test('The data has been fetched', () => {
-//   return fetch('http://localhost:3000/employees')
-//     .then(res => res.json())
-//     .then(data => {
-//       console.log('Fetched data:', data);
-//       expect(data).toBeDefined();
-//     });
-// });
+test('The data has been fetched', () => {
+  return fetch('http://localhost:3000/employees')
+    .then(res => res.json())
+    .then(mydata => {
+      console.log('Fetched data:', mydata);
+      expect(mydata).toBeDefined();
+    });
+});
 
 
-// test('The fetched data is something', async () =>{
-//   const data = await fetchData();
-//   await expect(fetchData()).resolves.toBe('something');
-//   expect(data).toBedefined();
-//   console.log(data);
-// })
-
-// test('Data Fetch Successful', async ()=> {
-//   await fetch('http://localhost:3000/employees')
-//   .then(res => res.json())
-//   .then(data => console.log(data));
-// })
-
-
-// Simulated async function using a callback
-function fetchData(callback) {
-  // Simulate an async delay
-  setTimeout(() => {
-    const data = 'peanut butter';
-    callback(null, data); // First arg is error, second is data
-  }, 100); // 100ms delay
-}
+const fetchData = require('./async')
 
 // Jest test using callback + `done`
 test('the data is peanut butter', done => {
