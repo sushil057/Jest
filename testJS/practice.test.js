@@ -41,3 +41,4 @@ test('fetchUser returns a user object', async () => {
     expect(user.id).toBe(1);
 
 })
+
