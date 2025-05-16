@@ -59,7 +59,7 @@ test('There is banana in the fruit list', () => {
 })
 
 
-test('Check to see if mango is there', () => {
+test('Mango is in the fruit list', () => {
   if(!fruits.includes('mango')){
     console.error("Mango is not in the list");
     throw new Error("Mango is not in the list");
