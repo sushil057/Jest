@@ -1,12 +1,19 @@
-const  fetchData = require('./fetchData')
+const {fetchData, getData} = require('./fetchData')
 
-test('The data has been fetched', async () =>{
-    const cities = await fetchData()
+test('The list contains Pokahra city.', ()=>{
+    return expect(fetchData()).resolves.toBe('Pokhara');
+})
+
+test('The test data is peanut butter', (done) =>{
+   getData((data) => {
     try {
-        expect(cities).toContain('Pokhara')
-        console.log(cities)
+        expect(data).toBe('peanut butter');
+        console.log(data);
+        done();
+
     }
     catch(error){
-        throw('City not found')
+        done(error);
     }
-})
+   })
+});

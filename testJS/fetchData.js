@@ -1,8 +1,14 @@
 function fetchData(){
     return new Promise((resolve,reject) => {
-        resolve(cities);
+        setTimeout(() => resolve('Pokhara'), 1000)
     })
 }
-cities =['Pokhara', 'Kathamndu', 'Chitwan', 'Butwal']
+// cities =['Pokhara', 'Kathamndu', 'Chitwan', 'Butwal']
 
-module.exports = fetchData;
+function getData(callback){
+    setTimeout(()=>{
+        callback('peanut butter')
+    }, 100); 
+}
+
+module.exports = {fetchData, getData};
