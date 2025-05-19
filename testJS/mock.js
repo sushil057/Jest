@@ -1,11 +1,5 @@
-// mockCallback=jest.fn();
-// function Mcallback(callback){
-//     callback('test');
-// }
-// module.exports ={Mcallback, mockCallback};
-
-mockCallback = jest.fn(x => 42 + x);
-function myCallback(callback){
-    callback(8);
+function Mock(){
+    const mockCallabck = jest.fn(x=> 42+x);
+    return mockCallabck;
 }
-module.exports = {myCallback, mockCallback};
+module.exports = Mock;

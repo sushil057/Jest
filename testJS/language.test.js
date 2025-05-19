@@ -72,6 +72,6 @@ test('Outer b, test 2', ()=>{
     console.log('Outer b, test 2')
 })    
 
-test.only('Only this will riun', () =>{
+test('Only this will riun', () =>{
     expect('A').toBe('A')
 })
