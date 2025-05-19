@@ -1,6 +1,6 @@
 function fetchData(){
     return new Promise((resolve,reject) => {
-        setTimeout(() => resolve('Pokhara'), 1000)
+        setTimeout(() => resolve('Pokhara'))
     })
 }
 // cities =['Pokhara', 'Kathamndu', 'Chitwan', 'Butwal']

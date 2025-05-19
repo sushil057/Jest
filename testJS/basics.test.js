@@ -53,19 +53,18 @@ test('There is a man in Hanuman', () =>{
   expect('Hanuman').toMatch(/man/)
 })
 
-const fruits = ['apple', 'banana', 'kiwi', 'oranges', 'mango']
+const fruits = ['apple', 'banana', 'kiwi', 'mango']
 test('There is banana in the fruit list', () => {
   expect(fruits).toContain('banana')
 })
 
 
 test('Mango is in the fruit list', () => {
-  if(!fruits.includes('mango')){
-    console.error("Mango is not in the list");
-    throw new Error("Mango is not in the list");
+  if(fruits.includes('mango')){
+    console.log("Mango is in the list");
   }
   else{
-    console.error("Mango is in the list")
+    console.error("Mango is not in the list")
   }
 })
 

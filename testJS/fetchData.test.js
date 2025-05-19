@@ -17,3 +17,9 @@ test('The test data is peanut butter', (done) =>{
     }
    })
 });
+
+test('The data is found to be peanut butter', async()=>{
+    const data = await fetchData();
+    expect(data).toBe('Pokhara');
+})
+
