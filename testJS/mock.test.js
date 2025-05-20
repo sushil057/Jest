@@ -49,4 +49,3 @@ const Add = jest.fn().mockImplementation((a, b) => a+b);
 console.log(Add(2,3));
 Add.mockReset();
 console.log(Add(2,3));
-
