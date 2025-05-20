@@ -50,4 +50,3 @@ console.log(Add(2,3));
 Add.mockReset();
 console.log(Add(2,3));
 
-
