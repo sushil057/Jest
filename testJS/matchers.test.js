@@ -104,4 +104,4 @@ test('checks if function throws a specific error', () => {
     
     // Passes, because the error message matches
     expect(throwError).toThrowError('Specific error');  
-});Í
+});

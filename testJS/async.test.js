@@ -82,3 +82,48 @@ test('the data is peanut butter', done => {
 
   fetchData(callback);
 });
+
+const searchdata = () =>  Promise.resolve('Data Searched');
+test('Data has been searched', () => {
+  expect(searchdata()).resolves.toBe('Data Searched');
+})
+const searchError = () => Promise.reject('Search Failed')
+test('Data search failed', ()=>{
+  expect(searchError()).rejects.toBe('Search Failed');
+})
+
+const fdata = () =>('data found'); //the data that should be fetched from the server
+test('data has been found', async ()=>{
+  const data = await fdata(); 
+  // tries to match the data fetched with the data that is supposed to be fetched 
+  try{
+    expect(data).toBe('data found'); //matched to see if both the data are same or not
+  }
+  // in case of differnce in data to bw fetched and and data fetched, throws error in the console.
+  catch(error){
+    throw('data could not be  found')
+
+  }
+})
+// original list of the languages
+const languages = ['English', 'Japanese','Korean', 'Chinese', 'Hindi']
+test('Language available', ()=>{
+// provied list to make sure the items are in the original list
+  // const lang = ['English', 'Korean', 'Japanese', 'Hindi', 'Chinese', 'Nepali']
+  const lang = ['English', 'Korean', 'Japanese', 'Hindi', 'Chinese']
+  const data = languages; // assigned data variable to the language arrays
+  try{
+    lang.forEach(item =>{
+      // condition to check if the items are included in the lang array
+      if(!data.includes(item)){
+        // the item that does not match in the lang and the language array is printed in the console
+        console.log(`${item} is not included in the list`)
+        expect(data).toContain(item)
+      }
+    })
+  }
+  // runs if the provided list contains any language that is not in the language array list
+  catch(error){
+    throw new Error('Given language is not in the list')
+  }
+})
