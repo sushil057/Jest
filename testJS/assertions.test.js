@@ -1,6 +1,5 @@
 const fetchError = require("./assertions.js");
 
-
 test('fetchError throws error', async() =>{
     await expect(fetchError()).rejects.toThrow('Something went wrong')
 })
