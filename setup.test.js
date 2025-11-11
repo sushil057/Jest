@@ -107,6 +107,6 @@ describe("Arithmatic Operations", ()=>{
 });
 
 // use test.only() to test only one tet case if that one needs to be tested repeatedly 
-test.only(' Why is this failing again and again', ()=> {
+test(' Why is this failing again and again', ()=> {
     expect(true).toBe(true);
 })
