@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`User Data form snapshot must match the given user data 1`] = `
+{
+  "address": "Pokhara-31",
+  "contact": 9763249991,
+  "id": 110,
+  "name": "Sushil Tiwari",
+  "otherDetails": {
+    "employee": true,
+    "status": "full time",
+  },
+}
+`;
+
+exports[`User Profile Snapshot should match the initial snapshot 1`] = `
+{
+  "address": undefined,
+  "contact": undefined,
+  "id": 101,
+  "name": "Alex Miller",
+  "otherDetails": {
+    "employee": true,
+    "status": "full time",
+  },
+}
+`;

@@ -6,7 +6,7 @@
 Staged local changes, then pulled the latest changes and then pushed the final code to the repo successfully.
 
 **Fri, Nov 14**. 
-The mock functions are very difficult to understand.
+<br>The mock functions are very difficult to understand.
 I could understand the basics od mock and its functionality but the advanced type of mock is difficult.  
 The things I learned are: 
   ```python
@@ -15,10 +15,12 @@ The things I learned are:
     3. mocking modules 
   ```
   
-  Trying to understand the mock implementation now:
+<br>Trying to understand the mock implementation now:
 => Could not understand mock implementation, so moving towards snapshot testing.
   
-  **Snapshot Testing**
+**Snapshot Testing**
+<br>Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly.
 
+<br>A typical snapshot test case renders a UI component, takes a snapshot, then compares it to a reference snapshot file stored alongside the test. The test will fail if the two snapshots do not match: either the change is unexpected, or the reference snapshot needs to be updated to the new version of the UI component.
 
 
