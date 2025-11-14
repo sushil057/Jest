@@ -1,18 +1,16 @@
 // userData.js
 
-// function getUserProfile(id, name) {
-//   return {
-//     id: id,
-//     name: name,
-//     timestamp: new Date().getFullYear(), // This will change every year!
-//     settings: {
-//       theme: 'dark',
-//       notifications: true
-//     }
-//   };
-// }
-
-// module.exports = getUserProfile;
+function getUserProfile(id, name) {
+  return {
+    id: id,
+    name: name,
+    timestamp: new Date().getFullYear(), // This will change every year!
+    settings: {
+      theme: 'dark',
+      notifications: true
+    }
+  };
+}
 
 
 function getUserData(id, name, contact, address){
@@ -28,4 +26,4 @@ function getUserData(id, name, contact, address){
     }
 }
 
-module.exports = getUserData;
+module.exports = {getUserProfile, getUserData};
