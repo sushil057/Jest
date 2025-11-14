@@ -1,6 +1,6 @@
 **Mon, Nov 10**. 
-This is a test to know if the codes are being pushed to the git repo
-The push was successful from windows laptop from home using git pul --reabase and then git push origin main
+<br>This is a test to know if the codes are being pushed to the git repo
+<br>The push was successful from windows laptop from home using git pul --reabase and then git push origin main
 
 **Wed, Nov 12**.  
 Staged local changes, then pulled the latest changes and then pushed the final code to the repo successfully.
