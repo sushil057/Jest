@@ -10,7 +10,7 @@ Staged local changes, then pulled the latest changes and then pushed the final c
 I could understand the basics od mock and its functionality but the advanced type of mock is difficult.  
 The things I learned are: 
   ```python
-    1. .mock property of
+    1. .mock property
     2. mock return values
     3. mocking modules 
   ```
