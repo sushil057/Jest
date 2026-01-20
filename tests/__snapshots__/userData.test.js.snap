@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`User Data from snapshot must match the given user data: two 1`] = `
 {
@@ -21,6 +21,6 @@ exports[`User Profile Snapshot should match the initial snapshot: one 1`] = `
     "notifications": true,
     "theme": "dark",
   },
-  "timestamp": 2025,
+  "timestamp": 2026,
 }
 `;

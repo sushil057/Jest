@@ -1,5 +1,10 @@
 function sum(a,b){
     return a+b;
 }
-module.exports =sum;
 
+
+function multiply(x,y){
+    return x*y;
+}
+
+module.exports ={sum, multiply}

@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const {sum, multiply} = require('./sum');
 
 test('The sum function is working fine', ()=> {
     expect(sum(1,2)).toBe(3);
@@ -36,3 +36,7 @@ test('two plus two', () => {
   expect(value).toBe(4);
   expect(value).toEqual(4);
 });
+
+test('The multiply function works well', () =>{
+    expect(multiply(2,3)).toBe(6)
+})
