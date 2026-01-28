@@ -16,7 +16,6 @@ The things I learned are:
   ```
   
 <br>Trying to understand the mock implementation now:
-=> Could not understand mock implementation, so moving towards snapshot testing.
   
 **Snapshot Testing**
 <br>Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly.
