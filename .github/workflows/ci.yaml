@@ -1,29 +1,31 @@
-name: Node.js CI
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+name: API Server CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
 
 jobs:
-  build:
+  test-api:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      # 1. Pull your code into the runner
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # 2. Install Node.js (Using v20 as it's the current LTS)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm' # This makes future runs much faster
 
-      - name: Install dependencies
+      # 3. Install axios and your test runner
+      - name: Install Dependencies
         run: npm install
 
-      - name: Run tests
+      # 4. Run your tests
+      - name: Run API Tests
         run: npm test
